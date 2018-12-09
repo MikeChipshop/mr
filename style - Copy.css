@@ -1,0 +1,167 @@
+/* ------------------------------------------------
+ HTML5 Reset
+------------------------------------------------ */
+html{ box-sizing: border-box;}html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,fieldset,form,label,
+legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{border:0;font-family:inherit;font-size:100%;
+font-style:inherit;font-weight:inherit;margin:0;outline:0;padding:0;vertical-align: baseline}:focus{/* remember to define focus styles! */outline:0}body{background:#fff;line-height:1}ol,ul{list-style: none}
+table{/* tables still need 'cellspacing="0"' in the markup */border-collapse:separate;border-spacing:0}caption,th,td{font-weight:normal;text-align:left}blockquote:before,blockquote:after,q:before,q:after{content: ""}
+blockquote,q{quotes: "" ""}a img{border: 0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display: block}.clear{clear:both}.clearfix:after{content:".";visibility:hidden;display:block;height:0;
+clear:both}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section,main{display:block}strong{font-weight:bold;}em{font-style:italic}del{text-decoration: line-through}abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}
+*, *:after, *:before {box-sizing:border-box;}
+
+/* ------------------------------------------------
+ Fonts
+------------------------------------------------ */
+
+/* ------------------------------------------------
+ Global
+------------------------------------------------ */
+
+body, html {
+	height:100%;
+	max-height:100%;
+}
+body {
+	color:#fff;
+	font-family: 'Roboto', sans-serif;
+	font-size:16px;
+	line-height:130%;
+	background-color: #1f1f1f;
+}
+.mt_splash-wrap h1 {
+	font-family: "reklame-script",sans-serif;
+	font-size:40px;
+	padding:10px 0px 30px 0px;
+}
+.mt_splash-wrap h2 {
+	font-size:20px;
+	padding:10px 0px 0px 0px;
+	color:#FFC107;
+	font-weight:bold;
+}
+.mt_splash-wrap p {
+	padding-bottom:10px;
+}
+.mt_main-splash-container {
+    display: flex;
+    height: 100%;
+	-webkit-justify-content: center;
+    -webkit-align-items: center;
+    justify-content: center;
+    align-items: center;
+	background-color: #1f1f1f;
+}
+.mt_splash-wrap {
+	max-width: 600px;
+    width: 100%;
+    text-align: center;
+	font-size:22px;
+    line-height: 1.3;
+	padding:20px;
+	position:relative;
+}
+.mt_splash-logo {
+	max-width: 140px;
+    width: 100%;
+    margin: 0 auto;
+    height: auto;	
+}
+.mt_splash-logo img {
+	width:100%;
+	height:auto;
+}
+.result,
+.mt_intro-content,
+.mt_splash-logo {
+	z-index: 2;
+    position: relative;
+}
+.mt_start-call {
+	background-color: #ff9900;
+    color: #fff;
+    border: none;
+    padding: 15px 10px 15px 50px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 4px;
+    margin: 20px auto;
+    cursor: pointer;
+	-webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+	-webkit-box-shadow: 0px 0px 23px 0px rgba(0,0,0,0);
+	-moz-box-shadow: 0px 0px 23px 0px rgba(0,0,0,0);
+	box-shadow: 0px 0px 23px 0px rgba(0,0,0,0);
+	display: -webkit-box;
+  	display: -moz-box;
+  	display: -ms-flexbox;
+  	display: -webkit-flex;
+  	display: flex; 
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+    line-height: 1;
+}
+.mt_start-call:after {
+	background: transparent url(img/loading.gif) no-repeat center center;
+	opacity:0;
+	content:"";
+	width:30px;
+	height:30px;
+	margin-left: 10px;
+	-webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+.mt_start-call:hover {
+	-webkit-box-shadow: 0px 0px 23px 0px rgba(0,0,0,0.21);
+	-moz-box-shadow: 0px 0px 23px 0px rgba(0,0,0,0.21);
+	box-shadow: 0px 0px 23px 0px rgba(0,0,0,0.21);
+	-webkit-transform: scale(1.1);transform: scale(1.1);
+}
+.mt_start-call:active {
+	-webkit-box-shadow: 0px 0px 23px 0px rgba(0,0,0,0);
+	-moz-box-shadow: 0px 0px 23px 0px rgba(0,0,0,0);
+	box-shadow: 0px 0px 23px 0px rgba(0,0,0,0);
+	-webkit-transform: scale(1);transform: scale(1);
+}
+.mt_loading-data .mt_start-call:after {
+	opacity:1;
+}
+.mt_result-score {
+	font-weight: bold;
+    font-size: 180px;
+    line-height: 1;
+}
+.circle-wrap {
+	position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	z-index:1;
+}
+.circle {
+	-webkit-transition: all 3s ease;
+    -moz-transition: all 3s ease;
+    -o-transition: all 3s ease;
+    transition: all 3s ease;
+	width: 10px;
+    height: 10px;
+    background: #ff0000;
+    border-radius: 50%;
+	opacity:0;
+}
+.circle-70 .circle {
+	height:400px;
+	width:400px;
+	opacity:1;
+}
